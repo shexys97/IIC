@@ -59,7 +59,7 @@ void I2C_vfnClockConfiguration(void){
 	while(0!=(MCG->S & (MCG_S_CLKST_MASK>>MCG_S_CLKST_SHIFT)));
 	//Set pll reference fq to div by 2 = 2MHz
 	MCG->C5 |= MCG_C5_PRDIV0(1);
-	//TODO CHECK PAGE 396 REF MANUAL
+	//TODO CHECK PAGE 396 REF Man
 
 	//Clear OUTDIV1 Default value setting to div by 1
 	SIM->CLKDIV1 &= ~SIM_CLKDIV1_OUTDIV1(15);
